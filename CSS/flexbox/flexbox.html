@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flexboxstyle.css">
+    <link rel="icon" type="jpeg" href="/songsAndAudio/113507350_p0.png">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    
+</body>
+</html>
+
+
+
+<!-- by default flex-direction: row  , can be changed to :row-reverse, :column, :column-reverse -->
+
+<!-- justify-content: sets the alignment on the main axis, flex-start by default
+ flex-end:(starts at the end, right of screen) 
+ justify-content: center 
+ justify-content: space-between (separates evenly)
+ justify-content: space-around (space on the margin as well)
+ height: 90vh  (90% of the viewport height)
+ -->
+
+ <!-- align-items: (property used for the cross axis) default is also flex-start -->
+
+ <!-- flex-wrap: wrap   makes element wrap if there's not enough space (default is :nowrap)
+  flex-wrap:  wrap-reverse  (wrap in reverse order 1,2,3 at bottom 7,8 at the top) -->
+
+  <!-- align-content: flex-start (no space between rows , usually used with flex-wrap.) -->
+   <!-- column-gap: 1em,  adds gap between columns for rows it's row-gap: -->
+
+   <!-- align-self: start (default) to align id (single element) :center, :end -->
+
+   <!-- can change order with order:   order: 1 puts at the end, order: -1 at the start -->

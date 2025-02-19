@@ -1,0 +1,165 @@
+body{
+    background-color: rgb(34, 34, 34);
+}
+.box{
+    display:inline-flex;
+}
+#box1{
+    width: 150px;
+    height: 150px;
+    background-color: hsl(0, 100%, 62%);
+    font-size: 2em;
+    text-align: center;
+    animation-name: slideLeft;
+    animation-duration: 3s;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+}
+@keyframes slideLeft{
+    from{transform: translateX(100px)}
+}
+
+#box2{
+    width: 150pX;
+    height: 150px;
+    background-color: hsl(175, 51%, 37%);
+    font-size: 2em;
+    text-align: center;
+    animation-name: slideRight;
+    animation-duration: 3s;
+}
+@keyframes slideRight{
+    to{transform: translateX(250px)}
+}
+
+#box3{
+    width: 150pX;
+    height: 150px;
+    background-color: hsl(241, 97%, 58%);
+    font-size: 2em;
+    text-align: center;
+    animation-name: slideUp;
+    animation-duration: 3s;
+}
+@keyframes slideUp{
+    from{transform: translateY(250px)}
+}
+
+#box4{
+    width: 150pX;
+    height: 150px;
+    background-color: hsl(44, 100%, 56%);
+    font-size: 2em;
+    text-align: center;
+    animation-name: slideDown;
+    animation-duration: 3s;
+}
+@keyframes slideDown{
+    to{transform: translateY(50px)}
+}
+
+#box5{
+    width: 150pX;
+    height: 150px;
+    background-color: hsl(352, 100%, 56%);
+    font-size: 2em;
+    text-align: center;
+    animation-name: rotate;
+    animation-duration: 3s;
+}
+@keyframes rotate{
+    50%{transform: rotateZ(360deg)}
+}
+#box6{
+    width: 150px;
+    height: 150px;
+    background-color: hotpink;
+    font-size: 2em;
+    text-align: center;
+    animation-name: grow;
+    animation-duration: 3s;
+}
+@keyframes grow{
+    50%{transform: scale(2,2)}
+}
+#box7{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(40, 255, 226);
+    font-size: 2em;
+    text-align: center;
+    animation-name: shrink;
+    animation-duration: 3s;
+}
+@keyframes shrink{
+    50%{transform: scale(0.5,0.5)}
+}
+#box8{
+    width: 150px;
+    height:150px;
+    background-color: black;
+    color: brown;
+    font-size: 2em;
+    text-align: center;
+    animation-name: fade;
+    animation-duration:3s;
+    animation-iteration-count: 2s;
+}
+@keyframes fade{
+    50%{opacity: 0}
+}
+#box9{
+    width: 150px;
+    height:150px;
+    background-color: rgb(56, 211, 211);
+    font-size: 2em;
+    text-align: center;
+    opacity: 0;
+    animation-name: FadeIn;
+    animation-duration: 3s;
+}
+@keyframes FadeIn{
+    100%{opacity:1}
+}
+#box10{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(59, 35, 35);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    animation-name: ColorChange;
+    animation-duration: 3s;
+}
+@keyframes ColorChange{
+    0%{background-color: rgb(59, 35, 35)}
+    20%{background-color: orange;}
+    40%{background-color: blue;}
+    60%{background-color: bisque;}
+    80%{background-color: darkgoldenrod;}
+    100%{background-color: dimgrey;}
+}
+#box11{
+    width: 150px;
+    height: 150px;
+    background-color: gray;
+    font-size: 1.5em;
+    text-align: center;
+    animation-name: Glow;
+    animation-duration: 3s;
+}
+@keyframes Glow{
+    50%{box-shadow: 0px 0px 50px yellow;}
+}
+#box12:hover{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(131, 83, 83);
+    font-size: 1.5em;
+    text-align: center;
+    animation-name: Hover;
+    animation-duration: 3s;
+}
+@keyframes Hover{
+    50%{box-shadow: 0px 0px 50px yellow;}
+}

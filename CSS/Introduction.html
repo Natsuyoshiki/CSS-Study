@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="jp">
+    <head>
+        <title> Introduction CSS</title>
+        <style> 
+            body         
+            {
+                background-color: black;        
+            } 
+            h1
+            {
+                color: white;
+            }
+            #p3{
+                color: rgb(255, 255, 255);
+            }
+        </style>
+        <link rel="stylesheet" href="StyleExternal.css">
+    </head>
+    <body>
+
+        <h1>This is my website</h1>
+
+        <p style="color:white ;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, neque. Perferendis ut sequi repellat officiis alias, voluptas ullam rem. Nesciunt qui nisi ut blanditiis illo rem laboriosam expedita quas assumenda.</p>
+        <p style="color:white ;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia expedita illo in, dolorum nesciunt tenetur repudiandae. Distinctio repellat quod, voluptate eligendi maxime sit quis aut est amet? Iste, explicabo dicta.</p>
+
+        <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga at est porro obcaecati corrupti quia tenetur eius laboriosam dolorum a eveniet, delectus repellat similique odit culpa perspiciatis quos. Consectetur?</p>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia expedita illo in, dolorum nesciunt tenetur repudiandae. Distinctio repellat quod, voluptate eligendi maxime sit quis aut est amet? Iste, explicabo dicta.</p>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia expedita illo in, dolorum nesciunt tenetur repudiandae. Distinctio repellat quod, voluptate eligendi maxime sit quis aut est amet? Iste, explicabo dicta.</p>
+
+        <p class="odd">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius consectetur illum repellat, consequatur ad possimus hic id! Labore sequi delectus, fugit provident accusamus veritatis assumenda quia excepturi, rem, maxime nulla.</p>
+        <p class="even">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius consectetur illum repellat, consequatur ad possimus hic id! Labore sequi delectus, fugit provident accusamus veritatis assumenda quia excepturi, rem, maxime nulla.</p>
+        <p class="odd">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius consectetur illum repellat, consequatur ad possimus hic id! Labore sequi delectus, fugit provident accusamus veritatis assumenda quia excepturi, rem, maxime nulla.</p>
+        <p class="even">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius consectetur illum repellat, consequatur ad possimus hic id! Labore sequi delectus, fugit provident accusamus veritatis assumenda quia excepturi, rem, maxime nulla.</p>
+
+
+    </body>
+</html>
+
+
+<!-- 3 differents we can apply CSS: Inline, Internal, External -->
+<!-- To apply internal CSS to one of these elements, set the style attribute to a line (inline) -->
+ <!-- To apply internal CSS, in <head> of doc we need pair of <style> tag
+   in elements we want to apply CSS to, we list that in <style> tag ex: body{} h1{}-->
+
+    <!--External is more popular cuz we can reusable style sheet
+    to create external style sheet, we need to create a new doc in our folder x.css
+    then link it to HTML file, with <link> tag and set rel attribute (stylesheet)
+    then we need href attribute, StyleExternal.css
+    then using StyleExternal.css file we can select elements from html file and apply CSS
+    
+    if you want to target a specific element <p> add an id to it
+        to select element by id in .css file type # then the id, #p1{}
+        can also apply css by class (a group) class="" inside of element
+        to apply css to class .className (.odd{} , .even{} )-->
+
+        <!-- Can use .css file with others files by linking it with <link rel="stylesheet"> 
+         and href="" (StyleExternal.css)-->

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link rel="icon" type="jpeg" href="/songsAndAudio/113507350_p0.png">
+        <link rel="stylesheet" href="pseudoEl.css">
+        <meta name="viewport" content="width=device-width, initial-scale 1.0" charset="UTF-8"> 
+        <title>Pseudo-classes</title>
+    </head>
+    <body>
+
+        <h1>Hello</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident in maiores vitae est recusandae! Eum blanditiis, quis necessitatibus quae asperiores placeat facere veritatis? At dignissimos et veniam, atque alias explicabo.</p>
+
+        <ul id="fruit">
+            <li id="apple">apple</li>
+            <li id="orange">orange</li>
+            <li id="banana">banana</li>
+        </ul>
+
+    </body>
+</html>
+
+<!-- pseudo element = keyword added after a selector
+                      that's used  to style a specific
+                      parts of an element
+                      
+                     selector: :pseudo-element
+                     h1::first-letter{}   (exemple)
+-->
+
+<!-- text selected with mouse change color
+    p::selection{
+    color:blue;
+    background-color: green;
+}-->
+
+<!-- add something at the beginning of li (🥂apple)
+    #fruit li::before{
+    content: "🥂";
+}-->
+
+
+<!-- change the marker of the list (the big dot at each beginning)
+   #fruit li::marker{
+    content: "😏";
+}-->

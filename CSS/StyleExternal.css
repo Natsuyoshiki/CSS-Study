@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+h1{
+    color:rgb(194, 94, 94)
+}
+#p1{
+    color:red
+}
+#p2{
+    color:yellow
+}
+.odd{
+    color: azure;
+}
+
+.even{
+    color:blue
+}

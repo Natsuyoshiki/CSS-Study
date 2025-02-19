@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link rel="icon" type="jpeg" href="/songsAndAudio/ecw3vjm6da171.png">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+    <div class="box" id="box1">Left</div>
+    <div class="box" id="box2">Right</div>
+    <div class="box" id="box3">Up</div>
+    <div class="box" id="box4">Down</div>
+    <div class="box" id="box5">Rotate</div>
+    <div class="box" id="box6">Rotate</div>
+    <div class="box" id="box7">shrink</div>
+    <div class="box" id="box8">Opacity</div>
+    <div class="box" id="box9">FadeIn</div>
+    <div  class="box" id="box10">ColorChange</div>
+    <div class="box" id="box11">Glow</div>
+    <div class="box" id="box12">Hover</div>
+    
+</body>
+</html>
+
+<!-- create animation with keyframe rule in .css and name u want  @keyframes name 
+  there's a few possible values: 
+
+  to{} (for element to end up somewhere ex: make it slide to the right)
+
+  from{}  (for an element to end up in its resting position)  from{transform: translateX(100px)}
+  animation starts 100px to the right and go back to its position
+
+  % (any numbers 20%, 40% etc) complete the animation at that % , at 50% makes it animation and revert back
+-->
+
+<!-- need to set animation name property within our #box and animation duration
+ animation-name: slideLeft
+ animation-duration: 1s; (the longer it is, the slower the animation)
+  -->
+
+<!-- if u want fade in effect instead of fade out
+   set the original opacity of the box to 0 then
+   @keyframes name{100% {opacity: 1}}
+   -->
+
+<!-- can start animation with a pseudo-class, start when I hover on it for exemple
+    #box:hover{animation-name:  animation-duration} or #box:active
+-->
+
+<!-- Can change iteration count of an animation for it happen  more than once with
+    animation-iteration-count: 2; can be set to animation-iteration-count: infinite;
+ -->
+
+<!-- change the direction of the animation  with
+     animation-direction: normal; reverse; alternate; alternate-reverse;
+-->
+
+<!-- Can pause or run animation with
+ animation-play-state: paused;
+ animation-play-state: running;  useful with javascript to toggle on/off smt -->
+
+<!-- animation-timing-function: ease-in-out;   is the default
+ constant speed  :linear; 
+ stop motion effect (sorta)  steps(5);  5 steps(frames)
+
+ cubic-bezier can be copy pasted when inspected source code and looking at animation-timing-function 
+ -->

@@ -1,0 +1,14 @@
+@font-face{
+    src:url(yosugaraver1_2.ttf);
+    font-family: yosuga;
+}
+
+h1{
+    font-family: "Noto Sans JP", serif;
+}
+p{
+    font-family: "yosuga", "courier new";
+    font-size:1.1em;
+    font-weight:bold;
+    font-style: italic;
+}
